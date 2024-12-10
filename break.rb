@@ -7,8 +7,8 @@ arr = gets.chomp.split.map(&:to_i)
 
 
 arr.each do |i|
+  puts i
   if i % 7 == 0
-    puts i
     break
   end
 end
