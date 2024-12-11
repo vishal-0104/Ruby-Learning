@@ -7,9 +7,13 @@ def division(num1, num2)
 
   rescue ZeroDivisionError=> e
     puts "#{e.message} , please enter a valid number"
+
+    
+  rescue ArgumentError => e
+    puts "#{e.massage} , please enter a valid argument"
   end
   
-  
+
 end
 
 
