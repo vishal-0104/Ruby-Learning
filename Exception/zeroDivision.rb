@@ -4,7 +4,7 @@ def division(num1, num2)
   begin
     return num1/num2
 
-
+    
   rescue ZeroDivisionError=> e
     puts "#{e.message} , please enter a valid number"
 
