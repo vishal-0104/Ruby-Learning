@@ -1,6 +1,10 @@
 class Shape
   def area
-    raise NotImplementedError, "Subclasses must implement the area method."
+    begin
+      raise NotImplementedError, "Subclasses must implement the area method."
+    rescue NotImplementedError => e
+      puts e.message
+    end 
   end
 end
 
