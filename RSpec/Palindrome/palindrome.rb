@@ -1,14 +1,13 @@
 class Palindrome
-  def palindrome_number?(num)
-    original = num
-    reverse = 0
-
-    while num > 0
-      digit = num % 10
-      reverse = reverse * 10 + digit
-      num /= 10
+  def palindrome_number?(str)
+    left,right=0,str.length-1
+    while left < right
+      if str[left] != str [right]
+        return false
+      end
+      left+=1
+      right-=1
     end
-
-    reverse == original
+      return true
   end
 end
