@@ -23,7 +23,7 @@ RSpec.describe Palindrome do
   
 
     it "ignores special characters and case" do
-      expect(palindrome.palindrome_number?("the vishal @ its me")).to be(false)
+      expect(palindrome.palindrome_number?("12@21")).to be(true)
     end
   end
 end
