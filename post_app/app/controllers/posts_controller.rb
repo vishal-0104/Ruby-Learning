@@ -1,6 +1,9 @@
 # app/controllers/posts_controller.rb
 class PostsController < ApplicationController
   include ActionView::RecordIdentifier
+
+  # we are using this for rails filteration
+  
   before_action :set_post, only: %i[show edit update destroy]
 
   def index
